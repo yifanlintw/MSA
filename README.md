@@ -16,7 +16,7 @@ iris = pd.read_csv("/Users/Yifanlin/Desktop/Hash Analytic/Assn04/Iris/iris.csv")
 X = iris.iloc[:, :-1].values
 y = iris.iloc[:, 4].values <h5>
 
-# Split dataset into training dataset(70%rows) and test dataset(30% rows)
+#Split dataset into training dataset(70%rows) and test dataset(30% rows)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=1)
 
 <h3>4.Building  and Evaluating Decision Tree Model<h3/>
@@ -24,18 +24,18 @@ Creating a Decision Tree Model using Scikit-learn. First, creating a decision tr
 # Create Decision Tree classifer object
 clf = DecisionTreeClassifier()
 
-# Train Decision Tree Classifer
+#Train Decision Tree Classifer
 clf = clf.fit(X_train,y_train)
 
 #Predict the response for test dataset
 y_pred = clf.predict(X_test)
 
-# Model Accuracy, how often is the classifier correct?
+# Question: How often is the classifier correct?
 print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
 
->>>> Accuracy: 0.9555555555555556
+Accuracy: 0.9555555555555556
 	
-The accuracy of the decision tree results is 0.9555555555555556
+The accuracy of the decision tree results is 0.9555555555555556.
 
 
 What your README should include: 
