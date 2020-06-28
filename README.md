@@ -1,7 +1,5 @@
 # MSA - Technical Steam
-This project is 
 
-1.	 We will use several functions below from python. 
 # Import the necessary libraries
 import pandas as pd
 import numpy as np
