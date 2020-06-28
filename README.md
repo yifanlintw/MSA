@@ -20,19 +20,18 @@
 <div>X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=1)</div></br>	
 
 <h3> 4.Building  and Evaluating Decision Tree Model</h3>
-<div> Creating a Decision Tree Model using Scikit-learn. First, creating a decision tree classifer object. Then, train it. </div>	
-<div># Create Decision Tree classifer object</div>	
+<div> Creating a Decision Tree Model using Scikit-learn. First, creating a decision tree classifer object. Then, train it. </div>
+<br><div># Create Decision Tree classifer object</div>	
 <div>clf = DecisionTreeClassifier()</div>	
 <br>
 <div># Train Decision Tree Classifer </div>
 <div>clf = clf.fit(X_train,y_train) </div></br>
 
 <div># Predict the response for test dataset </div>
-<div>y_pred = clf.predict(X_test) </div>
+<div>y_pred = clf.predict(X_test) </div></br>
 
 # Question: How often is the classifier correct?
 <div>print("Accuracy:",metrics.accuracy_score(y_test, y_pred)) </div>
-<br><div> We can predict the response for test dataset. Based on the model, we can make around 0.9555555555555556 accuracy. </div>
-<div>Accuracy</div>: 0.9555555555555556</div>
-<div>The accuracy of the decision tree results is 0.9555555555555556.</div></br>
-
+<div>Accuracy: 0.9555555555555556</div>
+<div>The accuracy of the decision tree results is 0.9555555555555556.</div>
+<br><div> We can predict the response for test dataset. Based on the model, we can make around 0.9555555555555556 accuracy. </div></br>
