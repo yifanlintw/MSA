@@ -1,16 +1,16 @@
 # MSA - Technical Steam
 
-<h4> 1. Import the necessary libraries<h4/>
+<h3> 1. Import the necessary libraries<h3/>
 import pandas as pd 
 import numpy as np
 from sklearn.tree import DecisionTreeClassifier  
 from sklearn.model_selection import train_test_split 
 from sklearn import metrics 
 	
-<h4>2. Loading dataset <h4/>
+<h3>2. Loading dataset <h3/>
 iris = pd.read_csv("/Users/Yifanlin/Desktop/Hash Analytic/Assn04/Iris/iris.csv")
 
-<h4>3.Dividing given columns into two types of variables target variable and feature variables. To understand model performance, dividing the dataset into a training set(70%) and a test set(30%) is a good strategy. <h4/>
+<h3>3.Dividing given columns into two types of variables target variable and feature variables. To understand model performance, dividing the dataset into a training set(70%) and a test set(30%) is a good strategy. <h3/>
 <h5> #split dataset in features and target variable <h5>
 <h5> iris = iris.drop('Id',axis=1)
 X = iris.iloc[:, :-1].values
