@@ -7,17 +7,17 @@
 <div>	from sklearn.model_selection import train_test_split </div>	
 <div>	from sklearn import metrics </div></h5>
 	
-<h3>2. Loading dataset <h3/>
-iris = pd.read_csv("/Users/Yifanlin/Desktop/Hash Analytic/Assn04/Iris/iris.csv")
+<h3>2. Loading dataset </h3>
+<div> iris = pd.read_csv("/Users/Yifanlin/Desktop/Hash Analytic/Assn04/Iris/iris.csv")</div>	
 
-<h3>3.Dividing given columns into two types of variables target variable and feature variables. To understand model performance, dividing the dataset into a training set(70%) and a test set(30%) is a good strategy. <h3/>
-<h5> #split dataset in features and target variable <h5>
-<h5> iris = iris.drop('Id',axis=1)
-X = iris.iloc[:, :-1].values
-y = iris.iloc[:, 4].values <h5>
+<h3>3.Dividing given columns into two types of variables target variable and feature variables. To understand model performance, dividing the dataset into a training set(70%) and a test set(30%) is a good strategy. </h3>
+<h5> <div> #split dataset in features and target variable</div>	
+<div>	iris = iris.drop('Id',axis=1)</div>	
+<div>	X = iris.iloc[:, :-1].values</div>	
+<div>	y = iris.iloc[:, 4].values </div><h5>
 
-#Split dataset into training dataset(70%rows) and test dataset(30% rows)
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=1)
+<div>#Split dataset into training dataset(70%rows) and test dataset(30% rows)</div>	
+<div>X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=1)</div>	
 
 <h3>4.Building  and Evaluating Decision Tree Model<h3/>
 Creating a Decision Tree Model using Scikit-learn. First, creating a decision tree classifer object. Then, train it. Finally, we can predict the response for test dataset. Based on the model, we can make around 0.9555555555555556 accuracy.
