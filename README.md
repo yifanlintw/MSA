@@ -1,12 +1,13 @@
 # MSA - Technical Steam
 
-#1. Import the necessary libraries
-<h1/>import pandas as pd </h1>
-# import numpy as np
-from sklearn.tree import DecisionTreeClassifier  # Import Tree Classifier
-from sklearn.model_selection import train_test_split # Import train_test_split function
-from sklearn import metrics # Import scikit-learn metrics module for auuracy calculation
-
+<h1> 1. Import the necessary libraries<h1/>
+<body> 
+import pandas as pd 
+import numpy as np
+from sklearn.tree import DecisionTreeClassifier  
+from sklearn.model_selection import train_test_split 
+from sklearn import metrics 
+<body/>
 2.	Loading dataset 
 # load dataset
 iris = pd.read_csv("/Users/Yifanlin/Desktop/Hash Analytic/Assn04/Iris/iris.csv")
