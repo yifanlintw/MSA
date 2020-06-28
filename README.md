@@ -8,7 +8,7 @@
 <div>	from sklearn import metrics </div>
 	
 <h3>2. Loading dataset </h3>
-<div> iris = pd.read_csv("/Users/Yifanlin/Desktop/Hash Analytic/Assn04/Iris/iris.csv")</div>	
+<div> iris = pd.read_csv("/Users/Yifanlin/Desktop/Iris/iris.csv")</div>	
 
 <h3>3.Dividing given columns into two types of variables target variable and feature variables. To understand model performance, dividing the dataset into a training set(70%) and a test set(30%) </h3>
 <div> # Split dataset in features and target variable</div>
