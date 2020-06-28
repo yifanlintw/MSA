@@ -11,13 +11,13 @@
 <div> iris = pd.read_csv("/Users/Yifanlin/Desktop/Hash Analytic/Assn04/Iris/iris.csv")</div>	
 
 <h3>3.Dividing given columns into two types of variables target variable and feature variables. To understand model performance, dividing the dataset into a training set(70%) and a test set(30%) is a good strategy. </h3>
-<div> #Split dataset in features and target variable</div>	
+<div> #Split dataset in features and target variable</div>
+
 <div>	iris = iris.drop('Id',axis=1)</div>	
 <div>	X = iris.iloc[:, :-1].values</div>	
 <div>	y = iris.iloc[:, 4].values </div>
-
-<div> #Split dataset into training dataset(70%rows) and test dataset(30% rows)</div>	
-<div>X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=1)</div>	
+<br><div> #Split dataset into training dataset(70%rows) and test dataset(30% rows)</div>	
+<div>X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=1)</div></br>	
 
 <h3> 4.Building  and Evaluating Decision Tree Model<h3/>
 <div> Creating a Decision Tree Model using Scikit-learn. First, creating a decision tree classifer object. Then, train it. </div>	
