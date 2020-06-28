@@ -1,11 +1,11 @@
 # MSA - Technical Steam
 
-<h3> 1. Import the necessary libraries<h3/>
-<div>	import pandas as pd </div>	
-import numpy as np
-from sklearn.tree import DecisionTreeClassifier  
-from sklearn.model_selection import train_test_split 
-from sklearn import metrics 
+<h3> 1. Import the necessary libraries</h3>
+<h5><div>	import pandas as pd </div>	
+<div>	import numpy as np</div>	
+<div>	from sklearn.tree import DecisionTreeClassifier  </div>	
+<div>	from sklearn.model_selection import train_test_split </div>	
+<div>	from sklearn import metrics </div></h5>
 	
 <h3>2. Loading dataset <h3/>
 iris = pd.read_csv("/Users/Yifanlin/Desktop/Hash Analytic/Assn04/Iris/iris.csv")
