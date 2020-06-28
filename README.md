@@ -1,7 +1,7 @@
 # MSA - Technical Steam
 
 <h3> 1. Import the necessary libraries<h3/>
-import pandas as pd 
+<div>	import pandas as pd </div>	
 import numpy as np
 from sklearn.tree import DecisionTreeClassifier  
 from sklearn.model_selection import train_test_split 
