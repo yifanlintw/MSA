@@ -48,8 +48,5 @@ y_pred = clf.predict(X_test)
 print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
 
 
-# In[ ]:
-
-
 
 
