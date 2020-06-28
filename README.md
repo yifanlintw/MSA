@@ -20,7 +20,7 @@
 <div>X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=1)</div></br>	
 
 <h3> 4.Building  and Evaluating Decision Tree Model</h3>
-<div> Creating a Decision Tree Model using Scikit-learn. First, creating a decision tree classifer object. Then, train it. </div>
+<div> Creating a Decision Tree Model using Scikit-learn and a decision tree classifer object. Then, train it. </div>
 <br><div># Create Decision Tree classifer object</div>	
 <div>clf = DecisionTreeClassifier()</div>	
 <br>
