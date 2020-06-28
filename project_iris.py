@@ -17,7 +17,7 @@ from sklearn.datasets import load_iris
 
 
 # load dataset
-iris = pd.read_csv("/Users/Yifanlin/Desktop/Hash Analytic/Assn04/Iris/iris.csv")
+iris = pd.read_csv("/Users/Yifanlin/Desktop/Iris/iris.csv")
 
 
 # In[112]:
