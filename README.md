@@ -10,7 +10,7 @@
 <h3>2. Loading dataset </h3>
 <div> iris = pd.read_csv("/Users/Yifanlin/Desktop/Hash Analytic/Assn04/Iris/iris.csv")</div>	
 
-<h3>3.Dividing given columns into two types of variables target variable and feature variables. To understand model performance, dividing the dataset into a training set(70%) and a test set(30%) is a good strategy. </h3>
+<h3>3.Dividing given columns into two types of variables target variable and feature variables. To understand model performance, dividing the dataset into a training set(70%) and a test set(30%) </h3>
 <div> # Split dataset in features and target variable</div>
 
 <div>	iris = iris.drop('Id',axis=1)</div>	
@@ -26,14 +26,13 @@
 <br>
 <div># Train Decision Tree Classifer </div>
 <div>clf = clf.fit(X_train,y_train) </div></br>
-<br>
+
 <div># Predict the response for test dataset </div>
-<div>y_pred = clf.predict(X_test) </div></br>
+<div>y_pred = clf.predict(X_test) </div>
 
 # Question: How often is the classifier correct?
-<div> We can predict the response for test dataset. Based on the model, we can make around 0.9555555555555556 accuracy. </div>
 <div>print("Accuracy:",metrics.accuracy_score(y_test, y_pred)) </div>
-
-Accuracy: 0.9555555555555556
-The accuracy of the decision tree results is 0.9555555555555556.
+<br><div> We can predict the response for test dataset. Based on the model, we can make around 0.9555555555555556 accuracy. </div>
+<div>Accuracy</div>: 0.9555555555555556</div>
+<div>The accuracy of the decision tree results is 0.9555555555555556.</div></br>
 
