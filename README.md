@@ -1,18 +1,17 @@
 # MSA - Technical Steam
 
-<h1> 1. Import the necessary libraries<h1/>
-<body> 
+<h3> 1. Import the necessary libraries<h1/>
 import pandas as pd 
 import numpy as np
 from sklearn.tree import DecisionTreeClassifier  
 from sklearn.model_selection import train_test_split 
 from sklearn import metrics 
-<body/>
-2.	Loading dataset 
+	
+<h3>2. Loading dataset <h3/>
 # load dataset
 iris = pd.read_csv("/Users/Yifanlin/Desktop/Hash Analytic/Assn04/Iris/iris.csv")
 
-3.	Dividing given columns into two types of variables target variable and feature variables. To understand model performance, dividing the dataset into a training set(70%) and a test set(30%) is a good strategy.
+<h3>3.Dividing given columns into two types of variables target variable and feature variables. To understand model performance, dividing the dataset into a training set(70%) and a test set(30%) is a good strategy. <h3/>
 #split dataset in features and target variable
 iris = iris.drop('Id',axis=1)
 X = iris.iloc[:, :-1].values
@@ -21,7 +20,7 @@ y = iris.iloc[:, 4].values
 # Split dataset into training dataset(70%rows) and test dataset(30% rows)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=1)
 
-4.	Building  and Evaluating Decision Tree Model
+<h3>4.Building  and Evaluating Decision Tree Model<h3/>
 Creating a Decision Tree Model using Scikit-learn. First, creating a decision tree classifer object. Then, train it. Finally, we can predict the response for test dataset. Based on the model, we can make around 0.9555555555555556 accuracy.
 # Create Decision Tree classifer object
 clf = DecisionTreeClassifier()
