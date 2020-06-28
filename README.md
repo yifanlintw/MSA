@@ -19,7 +19,7 @@
 <br><div> # Split dataset into training dataset(70%rows) and test dataset(30% rows)</div>	
 <div>X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=1)</div></br>	
 
-<h3> 4.Building  and Evaluating Decision Tree Model<h3/>
+<h3> 4.Building  and Evaluating Decision Tree Model</h3>
 <div> Creating a Decision Tree Model using Scikit-learn. First, creating a decision tree classifer object. Then, train it. </div>	
 <div># Create Decision Tree classifer object</div>	
 <div>clf = DecisionTreeClassifier()</div>	
@@ -31,18 +31,9 @@
 <div>y_pred = clf.predict(X_test) </div></br>
 
 # Question: How often is the classifier correct?
-<br><div>Finally, we can predict the response for test dataset. Based on the model, we can make around 0.9555555555555556 accuracy. </div></br>
+<div> We can predict the response for test dataset. Based on the model, we can make around 0.9555555555555556 accuracy. </div>
 <div>print("Accuracy:",metrics.accuracy_score(y_test, y_pred)) </div>
 
 Accuracy: 0.9555555555555556
-	
 The accuracy of the decision tree results is 0.9555555555555556.
-
-
-What your README should include: 
-1.	Detailed description of the idea and project
-2.	Environment setup & dependencies 
-3.	Step-by-step instruction on how to train and/or test your model (IMPORTANT) 
-Further instructions and help will be provided during the Git & GitHub workshop. 
-Alternatively please check out this article: 
 
